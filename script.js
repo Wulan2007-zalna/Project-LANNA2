@@ -142,3 +142,11 @@ dataKota.forEach(kota => {
 
     container.appendChild(card);
 });
+
+document.getElementById("showCities").addEventListener("click", () => {
+    document.getElementById("opening").style.display = "none";
+    const cont = document.getElementById("container");
+    cont.classList.remove("hidden");
+    cont.classList.add("fadeIn");
+});
+
