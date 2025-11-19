@@ -1,6 +1,67 @@
 const dataKota = [
   const dataKota = [
     {
+
+      const dataKota = [
+    {
+        nama: "Surabaya",
+        ikon: "Tugu Pahlawan",
+        makanan: "Rawon, Rujak Cingur, Lontong Balap",
+        foto: "https://upload.wikimedia.org/wikipedia/commons/7/74/Tugu_Pahlawan_Surabaya.jpg",
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7396216637033!2d112.731!3d-7.250445"
+    },
+    {
+        nama: "Malang",
+        ikon: "Alun-Alun Tugu",
+        makanan: "Bakso Malang, Orem-orem",
+        foto: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Alun-alun_Tugu_Malang.jpg",
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.0..."
+    }
+];
+
+// ===== Generate Card Kota =====
+const container = document.getElementById("container");
+
+dataKota.forEach(kota => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    card.innerHTML = `
+        <h2>${kota.nama}</h2>
+        <p><strong>Ikon:</strong> ${kota.ikon}</p>
+        <p><strong>Makanan:</strong> ${kota.makanan}</p>
+    `;
+
+    card.addEventListener("click", () => {
+        bukaPopup(kota);
+    });
+
+    container.appendChild(card);
+});
+
+// ===== POPUP FUNCTION =====
+function bukaPopup(kota) {
+    document.getElementById("popupTitle").textContent = kota.nama;
+    document.getElementById("popupIkon").textContent = "Ikon: " + kota.ikon;
+    document.getElementById("popupMakanan").textContent = "Makanan Khas: " + kota.makanan;
+    document.getElementById("popupFoto").src = kota.foto;
+    document.getElementById("popupMap").src = kota.map;
+
+    document.getElementById("popup").classList.remove("popup-hidden");
+}
+
+// ===== CLOSE POPUP =====
+document.querySelector(".close-btn").addEventListener("click", () => {
+    document.getElementById("popup").classList.add("popup-hidden");
+});
+
+// Tutup popup bila klik area gelap (luar box)
+document.getElementById("popup").addEventListener("click", (e) => {
+    if (e.target.id === "popup") {
+        document.getElementById("popup").classList.add("popup-hidden");
+    }
+});
+
         nama: "Surabaya",
         ikon: "Tugu Pahlawan",
         makanan: "Rawon, Rujak Cingur, Lontong Balap",
