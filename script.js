@@ -72,58 +72,7 @@ const dataKota = [
         foto: "",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126926.1!2d112.42!3d-7.47"
     }
-];
-
-// ======================
-// GENERATE CARD KOTA
-// ======================
-const container = document.getElementById("container");
-
-dataKota.forEach(kota => {
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-        <h2>${kota.nama}</h2>
-        <p><strong>Ikon:</strong> ${kota.ikon}</p>
-        <p><strong>Makanan:</strong> ${kota.makanan}</p>
-    `;
-
-    card.addEventListener("click", () => {
-        bukaPopup(kota);
-    });
-
-    container.appendChild(card);
-});
-
-// ======================
-// POPUP FUNGSI
-// ======================
-function bukaPopup(kota) {
-    document.getElementById("popupTitle").textContent = kota.nama;
-    document.getElementById("popupIkon").textContent = "Ikon: " + kota.ikon;
-    document.getElementById("popupMakanan").textContent = "Makanan Khas: " + kota.makanan;
-    document.getElementById("popupFoto").src = kota.foto || "";
-    document.getElementById("popupMap").src = kota.map;
-
-    document.getElementById("popup").classList.remove("popup-hidden");
-}
-
-// TUTUP POPUP
-document.querySelector(".close-btn").addEventListener("click", () => {
-    document.getElementById("popup").classList.add("popup-hidden");
-});
-
-document.getElementById("popup").addEventListener("click", (e) => {
-    if (e.target.id === "popup") {
-        document.getElementById("popup").classList.add("popup-hidden");
-    }
-});
-
-// ======================
-// HALAMAN AWAL → TAMPILKAN KOTA
-// ======================
-document.getElementById("showCities").addEventListener("click", () => {
+showCities").addEventListener("click", () => {
     document.getElementById("opening").style.display = "none";
     container.classList.remove("hidden");
     container.classList.add("fadeIn");
