@@ -15,7 +15,7 @@ const dataKota = [
         ikon: "Alun-Alun Tugu",
         makanan: "Bakso Malang, Orem-orem",
         foto: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Alun-alun_Tugu_Malang.jpg",
-        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.0..."
+        map: "https://share.google/jYzIomz5ppg61Y43X"
     }
 ];
 
