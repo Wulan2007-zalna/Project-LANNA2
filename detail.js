@@ -7,6 +7,22 @@
         julukan: "Kota Pahlawan",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7396216637033!2d112.731!3d-7.250445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa0688bffa7b%3A0xfd004d6b7f57e9ec!2sTugu%20Pahlawan!5e0!3m2!1sid!2sid!4v1697030000000"
     },
+        {
+    nama: "Surabaya",
+    ikon: "Tugu Pahlawan",
+    makanan: "Rawon, Rujak Cingur, Lontong Balap, Semanggi Suroboyo",
+    julukan: "Kota Pahlawan",
+    sejarah: "Surabaya dikenal sebagai kota pahlawan karena perjuangan 10 November 1945.",
+    tempatWisata: [
+        "Taman Bungkul",
+        "Kebun Binatang Surabaya",
+        "Jembatan Suramadu",
+        "Museum 10 November"
+    ],
+    foto: "https://upload.wikimedia.org/wikipedia/commons/7/74/Tugu_Pahlawan_Surabaya.jpg",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7396216637033!2d112.731!3d-7.250445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa0688bffa7b%3A0xfd004d6b7f57e9ec!2sTugu%20Pahlawan!5e0!3m2!1sid!2sid!4v1697030000000"
+}
+
 
 
     {
