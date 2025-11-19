@@ -70,9 +70,12 @@ dataKota.forEach(kota => {
     card.innerHTML = `
         <h2>${kota.nama}</h2>
         <p><strong>Ikon:</strong> ${kota.ikon}</p>
-        <p><strong>Makanan khas:</strong> ${kota.makanan}</p>
-        <iframe class="map" src="${kota.map}" loading="lazy"></iframe>
+        <p><strong>Makanan:</strong> ${kota.makanan}</p>
     `;
+
+    card.addEventListener("click", () => {
+        window.location.href = `detail.html?id=${kota.nama}`;
+    });
 
     container.appendChild(card);
 });
