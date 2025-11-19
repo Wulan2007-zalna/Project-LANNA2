@@ -1,8 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+    background: linear-gradient(270deg, #ff7eb3, #65d6ce, #4bb3fd);
+    background-size: 600% 600%;
+    animation: gerak 15s ease infinite;
+}
+
+@keyframes gerak {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 h1 {
