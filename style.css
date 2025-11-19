@@ -270,6 +270,21 @@ h1 {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
+#container.fadeIn {
+    animation: fadeCities 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeCities {
+    to {
+        opacity: 1;
+    }
+}
+
 .start-btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
